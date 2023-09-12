@@ -3,6 +3,7 @@ import logo from "./restaurant-logo.png"
 import contact, { createContact } from "./contactmodule.js"
 import { createCarte } from "./cartemodule"
 import { createHome } from "./homemodule"
+import { createSens } from "./sensmodule"
 
 const elementCreator = (type,content,classname="") => {
     let element = document.createElement(type)
@@ -28,7 +29,7 @@ const cleanContainer = () => {
     }
 }
 
-createContact()
+createHome()
 
 const home = document.querySelector('#home')
 const navButttons = document.querySelectorAll("li")
@@ -39,18 +40,23 @@ for (let i = 0 ; i < btnNames.length ; i++){
 }
 const runSelectors = () => {
     document.querySelector("#home").addEventListener("click", () => {
+        cleanContainer()
         createHome()
     })
     document.querySelector("#carte").addEventListener("click", () => {
+        cleanContainer()
         createCarte()
     })
     document.querySelector("#sens").addEventListener("click", () => {
-        createHome()
+        cleanContainer()
+        createSens()
     })
     document.querySelector("#traiteur").addEventListener("click", () => {
+        cleanContainer()
         createHome()
     })
     document.querySelector("#contact").addEventListener("click", () => {
+        cleanContainer()
         createContact()
     })
 }

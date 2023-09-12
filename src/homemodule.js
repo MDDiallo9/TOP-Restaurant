@@ -1,7 +1,7 @@
 import { elementCreator, container, cleanContainer } from ".";
 const createHome = () => {
     console.log("Home")
-    cleanContainer()
+    /* cleanContainer() */
     container.append(document.createElement("section"))
     let section  = document.querySelector("section")
     section.append(elementCreator("div","",["home","img"]))

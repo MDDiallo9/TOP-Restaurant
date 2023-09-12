@@ -1,7 +1,7 @@
 import { elementCreator, container, cleanContainer } from ".";
 const createContact = () => {
     console.log("contact")
-    cleanContainer()
+    /* cleanContainer() */
     container.append(elementCreator("div","CONTACT PAGE"))
 }
 
