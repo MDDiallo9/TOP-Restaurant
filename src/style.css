@@ -1,3 +1,44 @@
 .blue{
     color: blue;
 }
+@font-face {
+    font-family: "Roboto";
+    src: url();
+}
+*{
+    margin: 0;
+}
+nav{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+img{
+    width: 100%;
+}
+#logoimg{
+    position: relative;
+    top: 60px;
+}
+ul{
+    display: flex;
+    gap: 1.2rem;
+}
+li{
+    list-style: none;
+}
+#content{
+    display: flex;
+    justify-content: center;
+}
+
+/* HOME */
+
+.home{
+    width: 33%;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
