@@ -24,8 +24,8 @@ createCarte() */
 /* createHome() */
 
 const cleanContainer = () => {
-    for (let elem of container.children){
-        container.removeChild(elem)
+    while (container.children.length > 0){
+        container.removeChild(container.firstChild)
     }
 }
 
